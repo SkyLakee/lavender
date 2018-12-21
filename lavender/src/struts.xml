@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC   
+     "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"   
+     "http://struts.apache.org/dtds/struts-2.0.dtd">
+     
+     
+<struts>
+    <package name="liu" extends="struts-default">
+        <global-results>
+            <result name="succeed">/common/succeed.jsp</result>
+            <result name="msg">/common/msg.jsp</result>
+        </global-results>
+        
+        
+        <action name="upload" class="com.util.upload" method="upload">
+             <result name="success">/upload/upload_re.jsp</result>
+        </action>
+         
+        <action name="index" class="indexAction" method="index">
+            <result name="success">/qiantai/index.jsp</result>
+        </action>
+        
+        
+        <action name="leibieAdd" class="leibieAction" method="leibieAdd">
+        </action>
+        <action name="leibieDel" class="leibieAction" method="leibieDel">
+        </action>
+        <action name="leibieMana" class="leibieAction" method="leibieMana">
+            <result>/admin/leibie/leibieMana.jsp</result>
+        </action>
+        
+        
+        
+        <action name="goodsAdd" class="goodsAction" method="goodsAdd">
+        </action>
+        <action name="goodsDel" class="goodsAction" method="goodsDel">
+        </action>
+        <action name="goodsMana" class="goodsAction" method="goodsMana">
+            <result name="success">/admin/goods/goodsMana.jsp</result>
+        </action>
+        <action name="tejiashezhi" class="goodsAction" method="tejiashezhi">
+        </action>
+        
+        <action name="goodsAll" class="goodsAction" method="goodsAll">
+            <result name="success">/qiantai/goods/goodsAll.jsp</result>
+        </action>
+        <action name="goodsDetailQian" class="goodsAction" method="goodsDetailQian">
+            <result name="success">/qiantai/goods/goodsDetailQian.jsp</result>
+        </action>
+        <action name="goodsByLeibie" class="goodsAction" method="goodsByLeibie">
+            <result name="success">/qiantai/goods/goodsByLeibie.jsp</result>
+        </action>
+        <action name="goodsRes" class="goodsAction" method="goodsRes">
+            <result name="success">/qiantai/goods/goodsRes.jsp</result>
+        </action>
+        <action name="goodsTejia" class="goodsAction" method="goodsTejia">
+            <result name="success">/qiantai/goods/goodsTejia.jsp</result>
+        </action>
+        
+        
+        
+        
+        <action name="huiyuanReg" class="huiyuanAction" method="huiyuanReg">
+        </action>
+        <action name="huiyuanEdit" class="huiyuanAction" method="huiyuanEdit">
+        </action>
+        <action name="huiyuanMana" class="huiyuanAction" method="huiyuanMana">
+            <result name="success">/admin/huiyuan/huiyuanMana.jsp</result>
+        </action>
+        <action name="huiyuanDel" class="huiyuanAction" method="huiyuanDel">
+        </action>
+        
+        
+        <action name="login" class="loginAction" method="login">
+        	<result name="yes">/loginSuccess.jsp</result>
+        	<result name="no">/login2.jsp</result>
+        </action>
+        
+        <action name="addToCart" class="buyAction" method="addToCart">
+        </action>
+        <action name="myCart" class="buyAction" method="myCart">
+            <result name="success">/qiantai/myCart/myCart.jsp</result>
+        </action>
+        <action name="orderQueren" class="buyAction" method="orderQueren">
+            <result name="success">/qiantai/order/orderQueren.jsp</result>
+        </action>
+        <action name="orderSubmit" class="buyAction" method="orderSubmit">
+            <result name="success">/qiantai/order/orderSubmit.jsp</result>
+        </action>
+        <action name="orderMine" class="buyAction" method="orderMine">
+            <result name="success">/qiantai/order/orderMine.jsp</result>
+        </action>
+        <action name="orderDel" class="buyAction" method="orderDel">
+        </action>
+        <action name="orderMana" class="buyAction" method="orderMana">
+            <result name="success">/admin/order/orderMana.jsp</result>
+        </action>
+        <action name="orderShouli" class="buyAction" method="orderShouli">
+        </action>
+        <action name="orderDelAd" class="buyAction" method="orderDelAd">
+        </action>
+        <action name="orderDetail" class="buyAction" method="orderDetail">
+            <result name="success">/admin/order/orderDetail.jsp</result>
+        </action>
+        <action name="tongjiRes" class="buyAction" method="tongjiRes">
+            <result name="success">/admin/tongji/tongjiRes.jsp</result>
+        </action>
+        
+        
+        
+        
+        <action name="lianjieAdd" class="lianjieAction" method="lianjieAdd">
+        </action>
+        <action name="lianjieDel" class="lianjieAction" method="lianjieDel">
+        </action>
+        <action name="lianjieMana" class="lianjieAction" method="lianjieMana">
+            <result>/admin/lianjie/lianjieMana.jsp</result>
+        </action>
+        <action name="lianjieAll" class="lianjieAction" method="lianjieAll">
+            <result>/qiantai/lianjie/lianjieAll.jsp</result>
+        </action>
+        
+        
+        
+        
+        
+        
+        
+        <action name="liuyanAdd" class="liuyanAction" method="liuyanAdd">
+        </action>
+        <action name="liuyanMana" class="liuyanAction" method="liuyanMana">
+             <result name="success">/admin/liuyan/liuyanMana.jsp</result>
+        </action>
+        <action name="liuyanDel" class="liuyanAction" method="liuyanDel">
+        </action>
+        <action name="liuyanHuifu" class="liuyanAction" method="liuyanHuifu">
+        </action>
+        <action name="liuyanDetail" class="liuyanAction" method="liuyanDetail">
+             <result name="success">/qiantai/liuyan/liuyanDetail.jsp</result>
+        </action>
+        <action name="liuyanAll" class="liuyanAction" method="liuyanAll">
+             <result name="success">/qiantai/liuyan/liuyanAll.jsp</result>
+        </action>
+    </package>
+</struts>
